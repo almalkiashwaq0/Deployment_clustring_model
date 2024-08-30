@@ -14,14 +14,14 @@ col1, col2 = st.columns(2)
 
 
 with col1:
-    st.text('Player Statistics')
+    #st.text('Player Statistics')
     appearance = st.slider('Appearance', 0.0, 100.0, 10.0)
     goals = st.slider('Goals', 0.0, 0.5, 0.005)
 
 
 with col2:
-    st.text('More Player Statistics')
-    award = st.selectbox('Award (0 or 1)', [0, 1])
+    #st.text('More Player Statistics')
+    award = st.slider('Award (0 or 1)', min_value=0, max_value=1, step=1)
     height = st.slider('Height (cm)', 165.0, 195.0, 165.0)
 
 
