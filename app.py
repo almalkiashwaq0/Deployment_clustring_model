@@ -21,7 +21,7 @@ with col1:
 
 with col2:
     st.text('More Player Statistics')
-    award = st.slider('Award (0 or 1)', [0, 1])
+    award = st.selectbox('Award (0 or 1)', [0, 1])
     height = st.slider('Height (cm)', 165.0, 195.0, 165.0)
 
 
